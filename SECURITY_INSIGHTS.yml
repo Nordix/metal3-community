@@ -1,0 +1,107 @@
+header:
+  schema-version: 2.2.0
+  last-updated: '2026-02-24'
+  last-reviewed: '2026-02-24'
+  url: https://raw.githubusercontent.com/metal3-io/community/main/SECURITY_INSIGHTS.yml
+  comment: |
+    Project-level Security Insights file for Metal3. Individual
+    repositories inherit this data via header.project-si-source.
+project:
+  name: Metal3
+  homepage: https://metal3.io
+  roadmap: https://github.com/orgs/metal3-io/projects/8
+  administrators:
+  - name: kashifest
+    primary: true
+  - name: Rozzii
+    primary: false
+  - name: dtantsur
+    primary: false
+  - name: zaneb
+    primary: false
+  documentation:
+    code-of-conduct: https://github.com/cncf/foundation/blob/main/code-of-conduct.md
+    support-policy: https://book.metal3.io/version_support.html
+  repositories:
+  - name: baremetal-operator
+    url: https://github.com/metal3-io/baremetal-operator
+    comment: Kubernetes operator for managing bare metal hosts via Ironic.
+  - name: cluster-api-provider-metal3
+    url: https://github.com/metal3-io/cluster-api-provider-metal3
+    comment: Cluster API infrastructure provider for Metal3.
+  - name: community
+    url: https://github.com/metal3-io/community
+    comment: Project governance, maintainer lists, and community documentation.
+  - name: dot-github
+    url: https://github.com/metal3-io/.github
+    comment: Org-wide default community health files (SECURITY.md, profile).
+  - name: ironic-image
+    url: https://github.com/metal3-io/ironic-image
+    comment: Container image packaging OpenStack Ironic for Metal3.
+  - name: ironic-ipa-downloader
+    url: https://github.com/metal3-io/ironic-ipa-downloader
+    comment: Container image that downloads the Ironic Python Agent ramdisk.
+  - name: ironic-standalone-operator
+    url: https://github.com/metal3-io/ironic-standalone-operator
+    comment: Kubernetes operator for deploying standalone Ironic.
+  - name: ip-address-manager
+    url: https://github.com/metal3-io/ip-address-manager
+    comment: Kubernetes controller for IP address allocation.
+  - name: metal3-dev-env
+    url: https://github.com/metal3-io/metal3-dev-env
+    comment: Development and test environment for Metal3.
+  - name: metal3-docs
+    url: https://github.com/metal3-io/metal3-docs
+    comment: Project documentation published at book.metal3.io.
+  - name: metal3-io.github.io
+    url: https://github.com/metal3-io/metal3-io.github.io
+    comment: Project website at metal3.io.
+  - name: project-infra
+    url: https://github.com/metal3-io/project-infra
+    comment: CI/CD infrastructure (Prow, Jenkins, reusable GitHub Actions workflows).
+  - name: utility-images
+    url: https://github.com/metal3-io/utility-images
+    comment: Utility container images for CI and development.
+  vulnerability-reporting:
+    reports-accepted: true
+    bug-bounty-available: false
+    contact:
+      name: Metal3 Security Team
+      email: metal3-security@googlegroups.com
+      primary: true
+    policy: https://github.com/metal3-io/.github/blob/main/SECURITY.md
+    comment: |
+      Report vulnerabilities via email to the security mailing list.
+      See the security policy for full instructions.
+repository:
+  url: https://github.com/metal3-io/community
+  status: active
+  accepts-change-request: true
+  accepts-automated-change-request: false
+  core-team:
+  - name: dtantsur
+    primary: false
+  - name: elfosardo
+    primary: false
+  - name: kashifest
+    primary: true
+  - name: lentzi90
+    primary: false
+  - name: Rozzii
+    primary: false
+  - name: tuminoid
+    primary: false
+  documentation:
+    contributing-guide: https://github.com/metal3-io/community/blob/main/CONTRIBUTING.md
+    security-policy: https://github.com/metal3-io/.github/blob/main/SECURITY.md
+    governance: https://github.com/metal3-io/community/blob/main/GOVERNANCE.md
+  license:
+    url: https://github.com/metal3-io/community/blob/main/LICENSE
+    expression: Apache-2.0
+  security:
+    assessments:
+      self:
+        name: Metal3 Security Self-Assessment
+        date: '2024-11-19'
+        evidence: https://github.com/metal3-io/metal3-docs/blob/main/security/self-assessment.md
+        comment: Project-wide self-assessment covering all Metal3 components.
